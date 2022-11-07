@@ -1,0 +1,12 @@
+domain: flipper.io
+layout:
+- go.kubebuilder.io/v3
+projectName: flipper
+repo: github.com/akashjain971/flipper
+resources:
+- controller: true
+  domain: flipper.io
+  group: flipper.io
+  kind: Flipper
+  version: v1alpha1
+version: "3"

@@ -1,0 +1,14 @@
+apiVersion: flipper.io/v1alpha1
+kind: Flipper
+metadata:
+  name: service-mesh-flipper
+  namespace: flipper-system
+spec:
+  reconcileFrequency: 15s
+  interval: 30s
+  match:
+    labels:
+      app: "nginx"
+      mesh: "true"
+    namespaces: 
+    - "default"
